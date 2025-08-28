@@ -19,6 +19,7 @@
     :focus-visible { outline: 3px solid #16a34a; outline-offset: 2px; }
     .container { max-width: 1120px; }
     .grad { background: linear-gradient(135deg,#052e16 0%,#0a5a2a 40%,#16a34a 100%); }
+    .icon { width: 22px; height: 22px; }
   </style>
 </head>
 <body class="bg-neutral-50 text-neutral-900">
@@ -94,6 +95,19 @@
     </div>
   </section>
 
+  <!-- Réseaux sociaux -->
+  <section id="social" class="container mx-auto px-4 py-8">
+    <div class="bg-white rounded-2xl shadow p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="font-semibold">Suivez Re‑FAP :</p>
+      <div class="flex items-center gap-4">
+        <a class="flex items-center gap-2 hover:opacity-80" href="https://www.facebook.com/profile.php?id=61553459728182" target="_blank" rel="noopener">FB</a>
+        <a class="flex items-center gap-2 hover:opacity-80" href="https://www.instagram.com/_re.fap_/" target="_blank" rel="noopener">IG</a>
+        <a class="flex items-center gap-2 hover:opacity-80" href="https://www.tiktok.com/@nettoyagefapaneuf" target="_blank" rel="noopener">TikTok</a>
+        <a class="flex items-center gap-2 hover:opacity-80" href="https://www.youtube.com/@Re_Fap" target="_blank" rel="noopener">YT</a>
+      </div>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section id="faq" class="container mx-auto px-4 py-12">
     <h2 class="text-2xl md:text-3xl font-extrabold mb-6">FAQ – Questions fréquentes</h2>
@@ -161,6 +175,10 @@
           <label class="block text-sm font-medium">Message</label>
           <textarea name="message" rows="4" class="mt-1 w-full border rounded-xl p-2" placeholder="Marque/modèle, année, symptômes…"></textarea>
         </div>
+        <label class="flex items-start gap-2 text-xs text-neutral-600">
+          <input type="checkbox" required class="mt-1"/>
+          <span>J’accepte que mes données soient utilisées pour traiter ma demande conformément aux <a href="#mentions" class="underline">mentions légales & RGPD</a>.</span>
+        </label>
 
         <button type="submit" class="w-full bg-emerald-600 text-white py-3 rounded-xl font-semibold hover:bg-emerald-700">✉️ Envoyer ma demande</button>
       </form>
@@ -173,29 +191,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-neutral-950 text-neutral-300 text-sm">
-    <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
-      <p>© <span id="y"></span> Re-FAP Clermont-Ferrand — L'Atelier by PAULIN (EUROREPAR). Tous droits réservés.</p>
-      <nav class="flex gap-4">
-        <a class="hover:text-white" href="#diagnostic">Diagnostic</a>
-        <a class="hover:text-white" href="#devis">Devis</a>
-        <a class="hover:text-white" href="#tarifs">Tarifs</a>
-        <a class="hover:text-white" href="#faq">FAQ</a>
-        <a class="hover:text-white" href="#contact">Contact</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script>
-    // Année courante
-    document.getElementById('y').textContent = new Date().getFullYear();
-    // Afficher le bandeau de succès si ?sent=1 est présent
-    const url = new URL(window.location.href);
-    if (url.searchParams.get('sent') === '1') {
-      const b = document.getElementById('sentBanner');
-      if (b) b.classList.remove('hidden');
-    }
-  </script>
-</body>
-</html>
+  <!-- Mentions légales & RGPD -->
+  <section id="mentions" class="container mx-auto px-4 py-12">
+    <h2 class="text-2xl md:text-3xl font-extrabold mb-4">Mentions légales & RGPD</
