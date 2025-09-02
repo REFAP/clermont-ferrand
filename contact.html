@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact & Rendez-vous | Re-FAP Clermont-Ferrand</title>
+  <meta name="description" content="Contactez Re-FAP Clermont-Ferrand : 27 Rue Joseph Desaymard, 04 73 37 88 21. Formulaire pour diagnostic, décalaminage, nettoyage FAP, devis prise en charge totale." />
+  <link rel="canonical" href="https://clermont-ferrand.vercel.app/contact.html" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#065f46" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Re-FAP Clermont-Ferrand" />
+  <meta property="og:description" content="Demande de RDV ou devis pour votre FAP." />
+  <meta property="og:url" content="https://clermont-ferrand.vercel.app/contact.html" />
+  <meta property="og:image" content="https://clermont-ferrand.vercel.app/Re-Fap_Logo_Couleur.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://clermont-ferrand.vercel.app/"},
+    {"@type":"ListItem","position":2,"name":"Contact","item":"https://clermont-ferrand.vercel.app/contact.html"}
+  ]}
+  </script>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <header class="bg-emerald-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 py-6 flex items-center justify-between">
+      <a href="/" class="font-bold">Re-FAP Clermont-Ferrand</a>
+      <nav class="text-sm flex gap-4">
+        <a href="/diagnostic.html" class="hover:underline">Diagnostic</a>
+        <a href="/devis.html" class="hover:underline">Devis</a>
+        <a href="/tarifs.html" class="hover:underline">Tarifs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-10">
+    <h1 class="text-3xl md:text-4xl font-extrabold">Contact & prise de rendez-vous</h1>
+
+    <div class="grid md:grid-cols-2 gap-8 mt-6">
+      <form action="https://formsubmit.co/contact@re-fap.fr" method="POST" class="bg-white rounded-2xl shadow p-6 space-y-4">
+        <input type="hidden" name="_subject" value="Demande depuis contact.html — Re-FAP Clermont">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://clermont-ferrand.vercel.app/merci.html">
+        <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off">
+
+        <div><label class="block text-sm font-medium">Nom</label>
+          <input name="nom" required class="mt-1 w-full border rounded-xl p-2" />
+        </div>
+        <div><label class="block text-sm font-medium">Email</label>
+          <input type="email" name="email" required class="mt-1 w-full border rounded-xl p-2" />
+        </div>
+        <div><label class="block text-sm font-medium">Téléphone</label>
+          <input type="tel" name="telephone" class="mt-1 w-full border rounded-xl p-2" />
+        </div>
+        <div><label class="block text-sm font-medium">Besoin</label>
+          <select name="prestation" class="mt-1 w-full border rounded-xl p-2">
+            <option>Diagnostic 49 € TTC</option><option>Décalaminage 1h</option>
+            <option>Nettoyage FAP simple (DV6 PSA)</option><option>Nettoyage FAP-Catalyseur</option>
+            <option>Devis prise en charge totale</option><option>Autre / question</option>
+          </select>
+        </div>
+        <div><label class="block text-sm font-medium">Message</label>
+          <textarea name="message" rows="4" class="mt-1 w-full border rounded-xl p-2" placeholder="Marque/modèle, année, symptômes…"></textarea>
+        </div>
+        <label class="flex items-start gap-2 text-xs text-neutral-600">
+          <input type="checkbox" required class="mt-1"/>
+          <span>J’accepte l’usage de mes données pour traiter ma demande, selon les <a href="/#mentions" class="underline">mentions légales & RGPD</a>.</span>
+        </label>
+        <button class="w-full bg-emerald-600 text-white py-3 rounded-xl font-semibold hover:bg-emerald-700">✉️ Envoyer</button>
+      </form>
+
+      <aside class="bg-white rounded-2xl shadow p-6">
+        <h2 class="text-xl font-bold">Coordonnées</h2>
+        <p class="mt-2 text-sm">📍 27 Rue Joseph Desaymard, 63000 Clermont-Ferrand</p>
+        <p class="text-sm">📞 <a href="tel:+33473378821" class="underline">04 73 37 88 21</a></p>
+        <p class="text-sm">✉️ <a href="mailto:contact@re-fap.fr" class="underline">contact@re-fap.fr</a></p>
+        <div class="mt-4 aspect-video rounded-xl overflow-hidden">
+          <iframe class="w-full h-full" loading="lazy" src="https://www.google.com/maps?q=27%20Rue%20Joseph%20Desaymard%2C%2063000%20Clermont-Ferrand&output=embed" title="Carte – Re-FAP Clermont-Ferrand"></iframe>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="border-t">
+    <div class="max-w-5xl mx-auto px-4 py-6 text-sm text-neutral-600">
+      © Re-FAP Clermont-Ferrand — 27 Rue Joseph Desaymard — 04 73 37 88 21
+    </div>
+  </footer>
+</body>
+</html>
