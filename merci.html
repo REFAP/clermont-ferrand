@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Merci – Demande envoyée | Re-FAP Clermont-Ferrand</title>
+  <meta name="robots" content="noindex,follow" />
+  <link rel="canonical" href="https://clermont-ferrand.vercel.app/merci.html" />
+  <meta name="theme-color" content="#065f46" />
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXXX');
+    // Evènement de conversion (lead)
+    gtag('event', 'generate_lead', {
+      event_category: 'Form',
+      event_label: 'Contact Form',
+      value: 1
+    });
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <main class="min-h-screen flex items-center justify-center px-4">
+    <div class="max-w-lg bg-white shadow rounded-2xl p-8 text-center">
+      <h1 class="text-2xl font-extrabold text-emerald-700">Merci, votre demande a été envoyée ✅</h1>
+      <p class="mt-3 text-sm text-neutral-700">
+        Nous vous recontactons rapidement. Pour toute urgence, appelez le
+        <a href="tel:+33473378821" class="text-emerald-700 underline">04 73 37 88 21</a>.
+      </p>
+      <a href="/" class="mt-6 inline-flex rounded-xl bg-emerald-600 text-white px-5 py-3 font-semibold hover:bg-emerald-700">
+        ← Retour à l’accueil
+      </a>
+    </div>
+  </main>
+</body>
+</html>
