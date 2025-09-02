@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clermont-ferrand.vercel.app/sitemap.xml
